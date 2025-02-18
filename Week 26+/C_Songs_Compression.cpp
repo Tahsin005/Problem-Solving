@@ -91,12 +91,13 @@ void TEST_CASE(){
     sort(all(v), greater<int>());
 
     int i = 0, cnt = 0;
+    
     while (i < n and original > m) {
         original -= v[i];
         i++;
         cnt++;
     }
-
+	
     return void(cout << cnt << el);
 }
 e4{
