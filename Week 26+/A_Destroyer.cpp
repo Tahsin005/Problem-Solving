@@ -1,28 +1,29 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define el '\n'
 void solve() {
-	int n; cin >> n;
+	long long n; cin >> n;
 
-	map<int, int> mp;
-	for (int i = 0; i < n; i++) {
-		int x; cin >> x;
-		mp[x]++;
+	map<long long, long long> mp;
+	for (long long i = 0; i < n; i++) {
+		long long x; cin >> x; mp[x]++;
 	}
-	bool ok = true;
 
-	for (int i = 0; i < 99; i++) {
+	bool okay = true;
+
+	for (int i = 0; i < n; i++) {
 		if (mp[i] >= mp[i + 1]) continue;
 		else {
-			ok = false;
+			okay = false;
 			break;
 		}
-	}
+	} 
 
-	if (ok) cout << "YES" << '\n';
-	else cout << "NO" << '\n';
+	if (okay) return void(cout << "YES" << el);
+	else return void(cout << "NO" << el);
 }
 int main () {
-	int tt; cin >> tt; while (tt--) {
+	long long tt; cin >> tt; while(tt--) {
 		solve();
 	}
 }
