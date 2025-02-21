@@ -84,13 +84,15 @@ void TEST_CASE(){
             cnt++;
         }
     }
-    
+
     if (cnt > 1) cout << "NO" << el;
     else if(cnt == 0) cout << "YES" << el;
     else {
         if (pl > mn) cout << "NO" << el;
         else cout << "YES" << el;
     }
+
+    // they not like us...
 }
 e4{
     #ifndef OJ
