@@ -68,17 +68,20 @@ template <typename T> using ordered_set = tree<T, null_type, less<T>, rb_tree_ta
 
 // @Problem Link:
 void TEST_CASE(){
-    int n;
-    cin >> n;
+    int x;
+    cin >> x;
 
-    int sum = 0;
-
-    for (int i = 0; i < n; i++) {
-        int x; cin >> x;
-        sum += x;
+    int ans = -1;
+    for (int i = 0; i < 30; i++) {
+        for (int j = 0; j < 30; j++) {
+            int y = (1 << i) | (1 << j);
+            if (y < x and x + y > (x ^ y) and y + (x ^ y) > x) {
+                ans = y;
+            }
+        }
     }
 
-    cout << sum - n + 1 << el;
+    cout << ans << "\n";
 }
 e4{
     #ifndef OJ
