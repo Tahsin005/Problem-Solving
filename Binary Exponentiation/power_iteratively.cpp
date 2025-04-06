@@ -33,6 +33,7 @@ using namespace std;
 //     }
 //     return ans;
 // }
+// 
 
 const int MOD = 1e9 + 10;
 int binPow(int a,int b){
