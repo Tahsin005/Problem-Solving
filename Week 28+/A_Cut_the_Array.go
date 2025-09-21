@@ -16,6 +16,7 @@ func solve () {
 		fmt.Println("0 0")
 		return
 	}
+	
 	fmt.Printf("1 %d\n", n - 1)
 }
 
