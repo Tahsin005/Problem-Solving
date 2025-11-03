@@ -68,21 +68,11 @@ template <typename T> using ordered_set = tree<T, null_type, less<T>, rb_tree_ta
 
 // @Problem Link:
 void TEST_CASE(){
-    ll n;
-	cin>>n;
-    vector<ll> v(n);
+    int x, y, z;
+    cin >> x >> y >> z;
 
-    ll ans = -1;
-    for (ll i = 0; i < n; i++) {
-        cin >> v[i];
-        for (ll j = 2; j <= 53; j++) {
-            if (__gcd(j, v[i]) == 1) {
-                if (ans == -1) ans = j;
-                ans = min(ans, j);
-            }
-        }
-    }
-    cout << ans << el;
+    if ((x | y | z) == (x ^ y ^ z)) cyes;
+    else cno;
 }
 e4{
     #ifndef OJ
