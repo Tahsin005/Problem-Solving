@@ -3,6 +3,8 @@
 #define endl "\n"
 using namespace std;
 
+// https://www.hackerearth.com/practice/data-structures/trees/heapspriority-queues/practice-problems/algorithm/monk-and-the-magical-candy-bags/
+
 void solve(){
     ll n, k;
     cin >> n >> k;
