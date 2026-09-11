@@ -11,6 +11,7 @@ The problems are solved in various programming languages
   C
   C++
   Python
+  Golang
 ```
     
 ## Contact
