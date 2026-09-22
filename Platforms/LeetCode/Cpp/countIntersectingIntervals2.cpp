@@ -6,7 +6,7 @@ public:
         pq.push(nums[0][1]);
         long long int sol = 0;
         int n = nums.size();
-        for(int i= 1; i < n; i++){
+        for(int i = 1; i < n; i++){
             while (!pq.empty() && pq.top() < nums[i][0]){
                 pq.pop();
             }
